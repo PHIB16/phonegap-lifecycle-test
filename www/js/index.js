@@ -1,7 +1,7 @@
 var paused_count =0;
 var resumed_count = 0;
 var launched_count = 0;
-
+//EVENT LISTENER
 document.addEventListener("deviceready", onDeviceReady, false);
 		
 	
@@ -14,6 +14,8 @@ function updateDisplay() {
 
 // device APIs are available
 //
+
+//EVENT HANDLER
     function onDeviceReady() {
 	
 	document.addEventListener("resume", onResume, false);
@@ -25,7 +27,7 @@ function updateDisplay() {
 	alert("device ready");
     }
 
-
+//EVENT HANDLER
     function onPause() {
 	
 	paused_count++;
@@ -34,7 +36,7 @@ function updateDisplay() {
 	alert("pause");
     }
 	
-
+//EVENT HANDLER
     function onResume() {
 		
 	resumed_count++;
